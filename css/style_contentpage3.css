@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Enchanted Land";
+    src: url(../fonts/EnchantedLand.otf)
+}
+
+@font-face {
+    font-family: Recoleta;
+    src: url(../fonts/Recoleta.otf)
+}
+
+body {
+    margin: 0px;
+    background-color:rgb(235, 238, 241);
+}
+
+.medievalFont {
+    font-family: "Enchanted Land";
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.serifFont {
+    font-family: Recoleta;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.highlight1 {
+    background-color:rgb(167, 154, 172);
+}
+
+.highlight2 {
+    background-color:rgb(182, 163, 171);
+}
+
+header {
+    color:rgb(44, 60, 68);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(../images/header.png);
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    border-top: 4px solid rgb(44, 60, 68);
+    border-bottom: 4px solid rgb(44, 60, 68);
+    background-size: 100%;
+    background-color:rgb(207, 217, 223);
+}
+
+nav a {
+    color:rgb(100, 124, 136);
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a#currentPage {
+    color:rgb(44, 60, 68);
+    border: 4px solid rgb(44, 60, 68);
+    background-color:rgb(183, 199, 207);
+}
+
+nav a:hover {
+    color: rgb(248, 250, 252);
+}
+
+section {
+    z-index: 0;
+}
+
+section.body {
+    width: 75%;
+    color:rgb(44, 60, 68);
+    border-left: 4px solid rgb(44, 60, 68);
+    border-right: 4px solid rgb(44, 60, 68);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    background-color:rgb(183, 199, 207);
+}
+
+section.org {
+    border: 4px solid rgb(44, 60, 68);
+    width: 75%;
+    height: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(235, 238, 241);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+section.org h1 {
+    position: relative;
+    left: 50px;
+    font-size: 60px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.org p {
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section.org p.charDesc {
+    display: inline-block;
+    max-width: 500px;
+    position: relative;
+    left: 18px;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+section.org p.orgDesc {
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section.org img.orgPic {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section.org img.charPic {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    color:rgb(44, 60, 68);
+    text-align: center;
+    border-top: 4px solid rgb(44, 60, 68);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-size: 100%;
+    background-color:rgb(207, 217, 223);
+}
+
+footer .heading {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+footer .text {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+footer section.socmed {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer section.socmed div.sprite {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#facebook {
+    background: url(../images/sprites.png) no-repeat -538px -361px;
+	width: 50px;
+	height: 50px;
+}
+
+#instagram {
+    background: url(../images/sprites.png) no-repeat -364px -419px;
+	width: 50px;
+	height: 50px;
+}
+
+#twitter {
+    background: url(../images/sprites.png) no-repeat -480px -478px;
+	width: 50px;
+	height: 50px;
+}
+
+#facebook:hover {
+    background: url(../images/sprites.png) no-repeat -538px -13px;
+	width: 50px;
+	height: 50px;
+}
+
+#instagram:hover {
+    background: url(../images/sprites.png) no-repeat -364px -70px;
+	width: 50px;
+	height: 50px;
+}
+
+#twitter:hover {
+    background: url(../images/sprites.png) no-repeat -480px -128px;
+	width: 50px;
+	height: 50px;
+}
